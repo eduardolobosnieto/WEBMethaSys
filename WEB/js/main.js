@@ -7,7 +7,7 @@ jQuery(function($) {
 		});
 	});
 
-	//Ajax contact
+	/*//Ajax contact
 	var form = $('.contact-form');
 	form.submit(function () {
 		$this = $(this);
@@ -16,6 +16,28 @@ jQuery(function($) {
 		},'json');
 		return false;
 	});
+	*/
+	
+	//contact
+	$(document).ready(function(){
+        $("#contact-form").submit(function( event ){
+			event.preventDefault();
+			
+			$.ajax({
+				type:'POST',
+				url:"sendemail.php",
+				data:$(this).serialize(),
+				success: function(data){
+					$("#respuesta").slideDown();
+					$("#respuesta").html(data);
+				}
+			});
+			return false;
+		});
+    });
+
+	
+	
 
 	//smooth scroll
 	$('.navbar-nav > li').click(function(event) {
