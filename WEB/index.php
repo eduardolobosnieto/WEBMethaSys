@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Informatica MethaSys Ltda.</title>
+    <title>Informatica MethaSys Ltda..</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                         <span class="sr-only">Menu navegaci&oacute;n</span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand imglogo"href="index.html"></a>
+                    <a class="navbar-brand imglogo"href="index.php"></a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -205,9 +205,10 @@
                     <li><a class="btn btn-primary" href="#" data-filter=".evaluaciondedesempeno">Evaluacion de Desempeño</a></li>
                     <li><a class="btn btn-primary" href="#" data-filter=".admisibilidaddeiniciativa">Admisibilidad de Iniciativa</a></li>
                 </ul>/#portfolio-filter -->
-                <ul class="portfolio-items col-4">
-                
-                
+                <ul class="portfolio-items">
+                	<div class="row">
+
+                    	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <li class="portfolio-item gestion personal remuneraciones correspondencia recursosfisicos evaluaciondedesempeno">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -219,8 +220,9 @@
                             <h5>Gobierno Regional de Antofagasta</h5>
                         </div>
                     </li><!--/.portfolio-item-->
-                    
-                    
+                    	</div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <li class="portfolio-item gestion personal remuneraciones correspondencia recursosfisicos evaluaciondedesempeno">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -232,8 +234,9 @@
                             <h5>Gobierno Regional de Atacama</h5>         
                         </div>
                     </li><!--/.portfolio-item-->
-                    
-                    
+                    	</div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <li class="portfolio-item gestion personal remuneraciones correspondencia recursosfisicos">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -245,10 +248,9 @@
                             <h5>Gobierno Regional de Valparaiso</h5>          
                         </div>           
                     </li><!--/.portfolio-item-->
-                    
-                    
-                    
-                    
+                    	</div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <li class="portfolio-item gestion personal remuneraciones correspondencia recursosfisicos evaluaciondedesempeno admisibilidaddeiniciativa">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -260,8 +262,9 @@
                             <h5>Gobierno Regional del Maule</h5>  
                         </div>       
                     </li><!--/.portfolio-item-->
-                    
-                    
+                    	</div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <li class="portfolio-item gestion personal remuneraciones correspondencia recursosfisicos admisibilidaddeiniciativa">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -273,8 +276,9 @@
                             <h5>Gobierno Regional de la Araucanía</h5>         
                         </div>           
                     </li><!--/.portfolio-item-->
-                    
-                    
+                    	</div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <li class="portfolio-item gestion personal remuneraciones correspondencia recursosfisicos">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -286,12 +290,13 @@
                             <h5>Gobierno Regional de Magallanes</h5>  
                         </div>       
                     </li><!--/.portfolio-item-->
+                    	</div>
                     
                     
 
 
-                    
-                </ul>   
+                    </div>
+                </ul>
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#portfolio-->
@@ -431,31 +436,38 @@
                     <div class="col-sm-6">
                         <h1>Formulario de Contacto</h1>
                         <p>Envíenos sus datos y todas aquellas inquietudes que tenga sobre nuestra empresa. Le responderemos a la brevedad.</p>
-                        <div class="status alert alert-success" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
-                            <div class="row">
+                        <div id="respuesta" class="status alert alert-success" style="display: none"></div>
+                        
+                        
+                        <form method="post" name="contact-form" id="contact-form" action="">
+                        
+                        	<div class="row">
+                            	<div class="col-sm-6">
+                                	<div class="form-group">
+                        				<input name="name" id="name" type="text" class="form-control" placeholder="Nombre">
+                            		</div>
+                            	</div>
                                 <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Nombre">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
+                                	<div class="form-group">
+                        				<input name="email" id="email" type="text" class="form-control" placeholder="E-Mail">
+                            		</div>
+                            	</div>
+                        	</div>
+                            
                             <div class="row">
-                                <div class="col-sm-12">
+                            	<div class="col-sm-12">
+                                	<div class="form-group">
+                            <textarea name="message" id="message" class="form-control" rows="8" placeholder="Mensaje"></textarea>
+                            		</div>
                                     <div class="form-group">
-                                        <textarea name="message" id="message" required class="form-control" rows="8" placeholder="Mensage"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg"><i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar Mensaje</button>
-                                    </div>
-                                </div>
+                                    	<button type="submit" class="btn btn-danger btn-lg">Enviar Mensaje<i class="fa fa-envelope" aria-hidden="true"></i></button>
+                            			<!--<input type="submit" class="btn btn-danger btn-lg" value="Enviar Mensaje">-->
+                            		</div>
+                            	</div>
                             </div>
+                        
                         </form>
+
                     </div><!--/.col-sm-6-->
                     <div class="col-sm-6">
                         <h1>Nuestra Direcci&oacute;n</h1>
@@ -523,10 +535,10 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
