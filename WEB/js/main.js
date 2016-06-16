@@ -58,7 +58,8 @@ jQuery(function($) {
 		social_tools: false
 	});
 
-	//Isotope
+	
+	/*//Isotope
 	$(window).load(function(){
 		$portfolio = $('.portfolio-items');
 		$portfolio.isotope({
@@ -73,5 +74,5 @@ jQuery(function($) {
 			$portfolio.isotope({ filter: selector });
 			return false;
 		});
-	});
+	});*/
 });
