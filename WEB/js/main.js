@@ -30,14 +30,15 @@ jQuery(function($) {
 				success: function(data){
 					$("#respuesta").slideDown();
 					$("#respuesta").html(data);
+					$("#respuesta").fadeOut(5000);
+					$("#name").val("");
+					$("#email").val("");
+					$("#message").val("");
 				}
 			});
 			return false;
 		});
     });
-
-	
-	
 
 	//smooth scroll
 	$('.navbar-nav > li').click(function(event) {
