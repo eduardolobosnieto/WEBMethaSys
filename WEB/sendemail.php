@@ -22,6 +22,7 @@ else:
 				   <strong>Mensaje: </strong><p>'. $message.'</p>';
 	$mail->CharSet = 'UTF-8';
 	$mail->send();
-	echo '<div class="alert alert-success">Muchas gracias '.$nombre.' Mensaje Enviado con excito !</div>';
+	echo '<div class="alert alert-success">Muchas gracias '.$nombre.' Mensaje Enviado con excito !&nbsp;&nbsp;&nbsp;<i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i>
+</div>';
 endif;
 ?>
