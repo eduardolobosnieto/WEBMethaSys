@@ -44,6 +44,8 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Menu navegaci&oacute;n</span>
                         <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand imglogo"href="index.html"></a>
                 </div>
@@ -56,14 +58,11 @@
                         <li><a href="#empresa">Empresa</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
-                    
+
                     <ul class="nav navbar-nav-ext">
                         <li><a href="http://www.methasystem.cl/">Sistemas</a></li>
                     </ul>
 
-                    
-                    
-                
                 </div>
             </div>
         </div>
@@ -74,7 +73,7 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>Inform&aacute; tica MethaSys</h1>
+                        <h1>Inform&aacute;tica MethaSys</h1>
                         <p class="lead">Experiencia - Prestigio - Confianza</p>
                     </div>
                 </div>
@@ -88,27 +87,6 @@
                 </div>
             </div>
 
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>3</h1>
-                        <p class="lead">33</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="container">
-                    <div class="carousel-content">
-                        <h1>4</h1>
-                        <p class="lead">44</p>
-                    </div>
-                </div>
-            </div>
-
-            
-            
-            
             <!--/.item-->
         </div><!--/.carousel-inner-->
         <a class="prev" href="#main-slider" data-slide="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
@@ -446,7 +424,7 @@
                     <div class="col-sm-6">
                         <h1>Formulario de Contacto</h1>
                         <p>Env&iacute;enos sus datos y todas aquellas inquietudes que tenga sobre nuestra empresa. Le responderemos a la brevedad.</p>
-                        <div id="respuesta" class="status alert alert-success" style="display: none"></div>
+                        <div id="respuesta" style="display: none"></div>
                         
                         
                         <form method="post" name="contact-form" id="contact-form" action="">
@@ -470,7 +448,9 @@
                             <textarea name="message" id="message" class="form-control" rows="8" placeholder="Mensaje" required></textarea>
                             		</div>
                                     <div class="form-group">
-                                    	<button type="submit" class="btn btn-danger btn-lg">Enviar Mensaje <i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+                                    	<button type="submit" class="btn btn-success btn-lg"><i class="fa fa-envelope-o" aria-hidden="true"></i> Enviar Mensaje</button>
+                                        <button type="reset" class="btn btn-danger btn-lg"><i class="fa fa-trash-o" aria-hidden="true"></i>
+ Reset</button>
                             			<!--<input type="submit" class="btn btn-danger btn-lg" value="Enviar Mensaje">-->
                             		</div>
                             	</div>
@@ -550,5 +530,7 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+    
+    
 </body>
 </html>
