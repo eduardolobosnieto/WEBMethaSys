@@ -1,0 +1,18 @@
+/* For screen bigger than 800px */
+@media (min-width: 50em) {
+
+@media (min-width: 50em) and (max-width: 61.250em) {
+
+
+/* The "tablet" and "mobile" version */
+
+@media (max-width: 49.938em) {
+
+
+/* CSS specific to the 2x3 columns version */
+@media (min-width:32.5em) and (max-width: 49.938em) {
+
+/* Adapting the font size and width for smaller screns*/
+@media (min-width: 32.5em) and (max-width: 38.688em) {
+
+@media (max-width: 32.438em) {

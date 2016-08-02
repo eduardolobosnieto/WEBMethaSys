@@ -4,7 +4,7 @@ require("PHPMailer-master/PHPMailerAutoload.php");
 
 $mail = new PHPMailer;
 
-$to = "eduardolobosnieto@gmail.com";
+$to = "methasys@methasys.cl";
 
 $nombre = $_POST['name'];
 $email = $_POST['email'];
