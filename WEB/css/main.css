@@ -153,6 +153,9 @@ a:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+#map {
+	height:100%;
+}
 .box {
   padding: 50px 30px;
   background: #fff;
